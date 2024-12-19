@@ -1,0 +1,33 @@
+{
+  "references": [
+    {
+      "path": "./tsconfig.build.json"
+    },
+  ],
+  "compilerOptions": {
+    // Default
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    // Added
+    "rootDir": ".",
+    "jsx": "react",
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "demo"
+  ],
+  "exclude": [
+       "node_modules"
+   ]
+}
